@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "LOG_DISABLE=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
+    "test-coverage": "LOG_DISABLE=true NODE_OPTIONS=--experimental-vm-modules jest --coverage tests/unit",
+    "test-watch": "LOG_DISABLE=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
     "start": "node server/index.js",
     "live-reload": "nodemon server/index.js"
   },
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/JVGS1111/semana-javascript-expert06#readme",
   "devDependencies": {
+    "jest": "^27.5.1",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
