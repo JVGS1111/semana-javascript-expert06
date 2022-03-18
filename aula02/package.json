@@ -1,0 +1,37 @@
+{
+  "name": "semana-javascript-expert06",
+  "version": "1.0.0",
+  "description": "Seja bem vindo(a) à sexta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "LOG_DISABLE=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache",
+    "test-coverage": "LOG_DISABLE=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --coverage tests/unit",
+    "test-watch": "LOG_DISABLE=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js",
+    "live-reload-docker": "docker-compose up live-reload"
+  },
+  "engines": {
+    "node": "17.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JVGS1111/semana-javascript-expert06.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JVGS1111/semana-javascript-expert06/issues"
+  },
+  "homepage": "https://github.com/JVGS1111/semana-javascript-expert06#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3"
+  }
+}
